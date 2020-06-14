@@ -27,7 +27,15 @@ For example:
 ```javascript
 var crypto = CryptoRSA([38501, 45541], 1753374041);
 ```
-*please, insert use your own numbers in your tests*
+*please, use your own numbers in your tests*
+
+You can also insert only public_key or private_key, examples:
+```javascript
+var crypto = CryptoRSA([38501, 45541]);
+```
+```javascript
+var crypto = CryptoRSA(null, 1753374041);
+```
 
 **¿How to encrypt?**
 You can encrypt strings, numbers, files, etc.. But you need transform this in ArrayBuffer, after this, you can call a method **CryptoRSA.encrypt** to encrypt the ArrayBuffer, Example:
