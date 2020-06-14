@@ -17,7 +17,7 @@ git clone https://github.com/mdjfs/CryptoRSA.git
  # Usage
  Call a instance of CryptoRSA with this line of code: 
 ```javascript
-var crypto = CryptoRSA(private_key, public_key);
+var crypto = new CryptoRSA(private_key, public_key);
 ```
 **param** *private_key* = Insert array with two numbers primes greater than 16 bits (your private key). For example: [38501, 45541] This key is needed to decrypt binaries
 
@@ -25,16 +25,16 @@ var crypto = CryptoRSA(private_key, public_key);
 
 For example:
 ```javascript
-var crypto = CryptoRSA([38501, 45541], 1753374041);
+var crypto = new CryptoRSA([38501, 45541], 1753374041);
 ```
 *please, use your own numbers in your tests*
 
 You can also insert only public_key or private_key, examples:
 ```javascript
-var crypto = CryptoRSA([38501, 45541]);
+var crypto = new CryptoRSA([38501, 45541]);
 ```
 ```javascript
-var crypto = CryptoRSA(null, 1753374041);
+var crypto = new CryptoRSA(null, 1753374041);
 ```
 
 **¿How to encrypt?**
