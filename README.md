@@ -37,14 +37,14 @@ var crypto = new CryptoRSA([38501, 45541]);
 var crypto = new CryptoRSA(null, 1753374041);
 ```
 
-**¿How to encrypt?**
+**How to encrypt?**
 You can encrypt strings, numbers, files, etc.. But you need transform this in ArrayBuffer, after this, you can call a method **CryptoRSA.encrypt** to encrypt the ArrayBuffer, Example:
 ```javascript
 var result = crypto.encrypt(my_array_buffer);
 ```
 This method returns a array of decimal numbers encoded
 
-**¿How to decrypt?**
+**How to decrypt?**
 You can call a method **CryptoRSA.decrypt** to decrypt the ArrayBuffer, Example:
 ```javascript
 var my_array_buffer = crypto.decrypt(result);
